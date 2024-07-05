@@ -1,0 +1,33 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Library App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Library App</h1>
+        <div id="bookList">
+            <!-- Book list will be displayed here -->
+        </div>
+        <div id="borrowForm" class="hidden">
+            <h2>Borrow Book</h2>
+            <form id="borrowBookForm">
+                <input type="hidden" id="bookId" name="bookId">
+                <label for="borrowerName">Your Name:</label>
+                <input type="text" id="borrowerName" name="borrowerName" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="phone">Your Phone:</label>
+                <input type="text" id="phone" name="phone">
+                <button type="submit">Borrow</button>
+                <button type="button" onclick="closeForm()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
